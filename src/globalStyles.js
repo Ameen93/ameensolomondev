@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components';
-import 'https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap'; // Importing Google Font
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -7,11 +6,21 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     background-color: #0d0d0d;
     color: #00ff00;
-    font-family: 'Roboto Mono', monospace; /* Updated to a more modern font */
-    font-size: 14px; /* Smaller global font size */
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    scroll-behavior: smooth;
   }
   * {
     box-sizing: border-box;
+  }
+  a {
+    color: #00ff00;
+    text-decoration: none;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #00cc00;
+    }
   }
 `;
 

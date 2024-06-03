@@ -19,11 +19,12 @@ const CustomButton = styled(Button)`
   font-size: 0.875rem !important;
   border: 2px solid #00ff00 !important;
   padding: 8px 16px !important;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
 
   &:hover {
     background-color: #00ff00 !important;
     color: #0d0d0d !important;
+    transform: translateY(-2px);
   }
 `;
 
