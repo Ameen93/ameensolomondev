@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
     background-color: #0d0d0d;
     color: #00ff00;
     font-family: 'Roboto Mono', monospace;
-    font-size: 14px;
+    font-size: 10px; /* Even smaller global font size */
     scroll-behavior: smooth;
   }
   * {

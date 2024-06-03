@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 const Section = styled.section`
-  margin: 40px 0;
-  padding: 20px;
+  margin: 20px 0; /* Adjusted margin for smaller size */
+  padding: 10px; /* Adjusted padding for smaller size */
   background-color: #1a1a1a;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -12,40 +12,40 @@ const Section = styled.section`
 
 const Title = styled.h2`
   color: #00ff00;
-  font-size: 1.5rem;
-  margin-bottom: 16px;
+  font-size: 1rem; /* Even smaller font size */
+  margin-bottom: 8px; /* Adjusted margin for smaller size */
 `;
 
 const Job = styled(motion.div)`
-  margin-bottom: 24px;
+  margin-bottom: 12px; /* Adjusted margin for smaller size */
 `;
 
 const JobTitle = styled.h3`
   color: #00ff00;
-  font-size: 1.25rem;
-  margin-bottom: 8px;
+  font-size: 0.875rem; /* Even smaller font size */
+  margin-bottom: 4px; /* Adjusted margin for smaller size */
 `;
 
 const JobDetails = styled.div`
   color: #cccccc;
-  font-size: 1rem;
-  margin-bottom: 8px;
+  font-size: 0.75rem; /* Even smaller font size */
+  margin-bottom: 4px; /* Adjusted margin for smaller size */
 `;
 
 const Text = styled.p`
-  font-size: 1rem;
+  font-size: 0.75rem; /* Even smaller font size */
   color: #cccccc;
-  line-height: 1.6;
-  margin-bottom: 16px;
+  line-height: 1.2; /* Adjusted line height for smaller size */
+  margin-bottom: 8px; /* Adjusted margin for smaller size */
 `;
 
 const List = styled.ul`
-  padding-left: 20px;
-  margin-bottom: 16px;
+  padding-left: 16px; /* Adjusted padding for smaller size */
+  margin-bottom: 8px; /* Adjusted margin for smaller size */
 `;
 
 const ListItem = styled.li`
-  margin-bottom: 8px;
+  margin-bottom: 4px; /* Adjusted margin for smaller size */
 `;
 
 const jobVariants = {

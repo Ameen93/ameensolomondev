@@ -7,18 +7,18 @@ const TopSection = styled(Box)`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 32px; /* Adjusted padding for better spacing */
+  padding: 4px 8px; /* Further adjusted padding for smaller size */
   width: 100%;
   background-color: black;
   color: #00ff00;
-  border-bottom: 2px solid #00ff00; /* Added border for better separation */
+  border-bottom: 1px solid #00ff00; /* Adjusted border for smaller size */
 `;
 
 const CustomButton = styled(Button)`
   color: #00ff00 !important;
-  font-size: 0.875rem !important;
-  border: 2px solid #00ff00 !important;
-  padding: 8px 16px !important;
+  font-size: 0.625rem !important; /* Even smaller font size */
+  border: 1px solid #00ff00 !important; /* Adjusted border for smaller size */
+  padding: 2px 4px !important; /* Adjusted padding for smaller size */
   transition: background-color 0.3s, color 0.3s, transform 0.3s;
 
   &:hover {
@@ -32,7 +32,7 @@ const ContentContainer = styled.div`
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px; /* Adjusted padding for smaller size */
 `;
 
 const Layout = ({ children }) => {
@@ -44,7 +44,7 @@ const Layout = ({ children }) => {
     <>
       <GlobalStyle />
       <TopSection>
-        <Typography variant="h6" style={{ color: '#00ff00', fontSize: '1rem' }}>
+        <Typography variant="h6" style={{ color: '#00ff00', fontSize: '0.75rem' }}>
           Ameen Solomon
         </Typography>
         <CustomButton onClick={openResume}>

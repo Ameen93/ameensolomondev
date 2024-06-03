@@ -9,48 +9,53 @@ import TestingIcon from '@mui/icons-material/BugReport';
 import SupportIcon from '@mui/icons-material/Support';
 
 const Section = styled.section`
-  margin: 40px 0;
-  padding: 20px;
+  margin: 20px 0;
+  padding: 10px;
   background-color: #1a1a1a;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
 `;
 
 const Title = styled.h2`
   color: #00ff00;
-  font-size: 1.5rem;
-  margin-bottom: 16px;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  text-align: center;
 `;
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-items: center;
 `;
-
 
 const Card = styled(motion.div)`
   background-color: #2a2a2a;
   border-radius: 8px;
-  padding: 20px;
+  padding: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
+  width: 100%;
+  max-width: 200px;
 `;
 
 const IconWrapper = styled.div`
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 `;
 
 const CardTitle = styled.h3`
   color: #00ff00;
-  font-size: 1.25rem;
-  margin-bottom: 8px;
+  font-size: 0.875rem;
+  margin-bottom: 4px;
 `;
 
 const Text = styled.p`
-  font-size: 1rem;
+  font-size: 0.75rem;
   color: #cccccc;
-  line-height: 1.6;
+  line-height: 1.2;
 `;
 
 const cardVariants = {
@@ -70,7 +75,7 @@ const ComprehensiveSolutions = () => {
         <Grid>
           <Card variants={cardVariants}>
             <IconWrapper>
-              <ReviewIcon style={{ fontSize: '40px', color: '#00ff00' }} />
+              <ReviewIcon style={{ fontSize: '24px', color: '#00ff00' }} />
             </IconWrapper>
             <CardTitle>Website Review</CardTitle>
             <Text>
@@ -80,7 +85,7 @@ const ComprehensiveSolutions = () => {
 
           <Card variants={cardVariants}>
             <IconWrapper>
-              <StrategyIcon style={{ fontSize: '40px', color: '#00ff00' }} />
+              <StrategyIcon style={{ fontSize: '24px', color: '#00ff00' }} />
             </IconWrapper>
             <CardTitle>Business Strategy</CardTitle>
             <Text>
@@ -90,7 +95,7 @@ const ComprehensiveSolutions = () => {
 
           <Card variants={cardVariants}>
             <IconWrapper>
-              <UXIcon style={{ fontSize: '40px', color: '#00ff00' }} />
+              <UXIcon style={{ fontSize: '24px', color: '#00ff00' }} />
             </IconWrapper>
             <CardTitle>User Experience Design</CardTitle>
             <Text>
@@ -100,7 +105,7 @@ const ComprehensiveSolutions = () => {
 
           <Card variants={cardVariants}>
             <IconWrapper>
-              <DevelopmentIcon style={{ fontSize: '40px', color: '#00ff00' }} />
+              <DevelopmentIcon style={{ fontSize: '24px', color: '#00ff00' }} />
             </IconWrapper>
             <CardTitle>Tailored Development</CardTitle>
             <Text>
@@ -110,7 +115,7 @@ const ComprehensiveSolutions = () => {
 
           <Card variants={cardVariants}>
             <IconWrapper>
-              <TestingIcon style={{ fontSize: '40px', color: '#00ff00' }} />
+              <TestingIcon style={{ fontSize: '24px', color: '#00ff00' }} />
             </IconWrapper>
             <CardTitle>Rigorous Testing</CardTitle>
             <Text>
@@ -120,7 +125,7 @@ const ComprehensiveSolutions = () => {
 
           <Card variants={cardVariants}>
             <IconWrapper>
-              <SupportIcon style={{ fontSize: '40px', color: '#00ff00' }} />
+              <SupportIcon style={{ fontSize: '24px', color: '#00ff00' }} />
             </IconWrapper>
             <CardTitle>Ongoing Support</CardTitle>
             <Text>

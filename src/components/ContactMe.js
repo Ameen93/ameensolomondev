@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 const Section = styled.section`
-  margin: 40px 0;
-  padding: 20px;
+  margin: 20px 0; /* Adjusted margin for smaller size */
+  padding: 10px; /* Adjusted padding for smaller size */
   background-color: #1a1a1a;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -12,15 +12,15 @@ const Section = styled.section`
 
 const Title = styled.h2`
   color: #00ff00;
-  font-size: 1.5rem;
-  margin-bottom: 16px;
+  font-size: 1rem; /* Even smaller font size */
+  margin-bottom: 8px; /* Adjusted margin for smaller size */
 `;
 
 const Text = styled.p`
-  font-size: 1rem;
+  font-size: 0.75rem; /* Even smaller font size */
   color: #cccccc;
-  line-height: 1.6;
-  margin-bottom: 16px;
+  line-height: 1.2; /* Adjusted line height for smaller size */
+  margin-bottom: 8px; /* Adjusted margin for smaller size */
 `;
 
 const Form = styled.form`
@@ -29,30 +29,32 @@ const Form = styled.form`
 `;
 
 const Input = styled.input`
-  padding: 10px;
-  margin-bottom: 10px;
+  padding: 6px; /* Adjusted padding for smaller size */
+  margin-bottom: 6px; /* Adjusted margin for smaller size */
   border: 1px solid #cccccc;
   border-radius: 4px;
   background-color: #2a2a2a;
   color: #ffffff;
+  font-size: 0.75rem; /* Even smaller font size */
 `;
 
 const TextArea = styled.textarea`
-  padding: 10px;
-  margin-bottom: 10px;
+  padding: 6px; /* Adjusted padding for smaller size */
+  margin-bottom: 6px; /* Adjusted margin for smaller size */
   border: 1px solid #cccccc;
   border-radius: 4px;
   background-color: #2a2a2a;
   color: #ffffff;
+  font-size: 0.75rem; /* Even smaller font size */
 `;
 
 const Button = styled.button`
-  padding: 10px;
+  padding: 6px; /* Adjusted padding for smaller size */
   border: none;
   border-radius: 4px;
   background-color: #00ff00;
   color: #0d0d0d;
-  font-size: 1rem;
+  font-size: 0.75rem; /* Even smaller font size */
   cursor: pointer;
   transition: background-color 0.3s;
 

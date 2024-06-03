@@ -3,8 +3,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import Layout from './components/Layout';
 import AboutMe from './components/AboutMe';
 import Experience from './components/Experience';
-import Portfolio from './components/Portfolio';
-import ContactMe from './components/ContactMe';
+  import ContactMe from './components/ContactMe';
 import ComprehensiveSolutions from './components/ComprehensiveSolutions';
 import CenteredText from './components/CenteredText';
 import LoadingScreen from './components/LoadingScreen';
@@ -27,7 +26,6 @@ function App() {
             <CenteredText />
             <AboutMe />
             <Experience />
-            <Portfolio />
             <ComprehensiveSolutions />
             <ContactMe />
           </Container>
