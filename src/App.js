@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Layout from './components/Layout';
+import AboutMe from './components/AboutMe';
+import Experience from './components/Experience';
+import Portfolio from './components/Portfolio';
+import ContactMe from './components/ContactMe';
+import LoadingScreen from './components/LoadingScreen';
+import { Container } from '@mui/material';
 
 function App() {
+  const [loadingComplete, setLoadingComplete] = useState(false);
+
+  const handleLoadingComplete = () => {
+    setLoadingComplete(true);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {!loadingComplete ? (
+        <LoadingScreen onComplete={handleLoadingComplete} />
+      ) : (
+        <Router>
+          <Layout>
+            <Container sx={{ mt: 4 }}>
+              <AboutMe />
+              <Experience />
+              <Portfolio />
+              <ContactMe />
+            </Container>
+          </Layout>
+        </Router>
+      )}
+    </>
   );
 }
 
