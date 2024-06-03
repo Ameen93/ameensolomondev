@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 const Section = styled.section`
-  margin: 20px 0; /* Adjusted margin for smaller size */
-  padding: 10px; /* Adjusted padding for smaller size */
+  margin: 20px 0;
+  padding: 10px;
   background-color: #1a1a1a;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -12,40 +12,50 @@ const Section = styled.section`
 
 const Title = styled.h2`
   color: #00ff00;
-  font-size: 1rem; /* Even smaller font size */
-  margin-bottom: 8px; /* Adjusted margin for smaller size */
+  font-size: 1rem;
+  margin-bottom: 8px;
 `;
 
 const Job = styled(motion.div)`
-  margin-bottom: 12px; /* Adjusted margin for smaller size */
+  margin-bottom: 12px;
 `;
 
 const JobTitle = styled.h3`
   color: #00ff00;
-  font-size: 0.875rem; /* Even smaller font size */
-  margin-bottom: 4px; /* Adjusted margin for smaller size */
+  font-size: 0.875rem;
+  margin-bottom: 4px;
 `;
 
 const JobDetails = styled.div`
   color: #cccccc;
-  font-size: 0.75rem; /* Even smaller font size */
-  margin-bottom: 4px; /* Adjusted margin for smaller size */
+  font-size: 0.75rem;
+  margin-bottom: 4px;
 `;
 
 const Text = styled.p`
-  font-size: 0.75rem; /* Even smaller font size */
+  font-size: 0.75rem;
   color: #cccccc;
-  line-height: 1.2; /* Adjusted line height for smaller size */
-  margin-bottom: 8px; /* Adjusted margin for smaller size */
+  line-height: 1.2;
+  margin-bottom: 8px;
 `;
 
 const List = styled.ul`
-  padding-left: 16px; /* Adjusted padding for smaller size */
-  margin-bottom: 8px; /* Adjusted margin for smaller size */
+  padding-left: 16px;
+  margin-bottom: 8px;
 `;
 
 const ListItem = styled.li`
-  margin-bottom: 4px; /* Adjusted margin for smaller size */
+  margin-bottom: 4px;
+`;
+
+const KeyTechnology = styled.span`
+  display: inline-block;
+  background-color: #333333;
+  color: #ffffff;
+  padding: 4px 8px;
+  margin: 2px;
+  border-radius: 12px;
+  font-size: 0.75rem;
 `;
 
 const jobVariants = {
@@ -78,7 +88,18 @@ const Experience = () => {
             </ListItem>
           </List>
           <Text>
-            <strong>Key technologies:</strong> Python, JavaScript, React, NodeJS, SQL, Docker, Git, Linux.
+            <strong>Key technologies:</strong>
+            <div>
+              <KeyTechnology>Python</KeyTechnology>
+              <KeyTechnology>JavaScript</KeyTechnology>
+              <KeyTechnology>React</KeyTechnology>
+              <KeyTechnology>Typescript </KeyTechnology>
+              <KeyTechnology>NodeJS</KeyTechnology>
+              <KeyTechnology>SQL</KeyTechnology>
+              <KeyTechnology>Docker</KeyTechnology>
+              <KeyTechnology>Git</KeyTechnology>
+              <KeyTechnology>Linux</KeyTechnology>
+            </div>
           </Text>
         </Job>
         
@@ -94,7 +115,14 @@ const Experience = () => {
             </ListItem>
           </List>
           <Text>
-            <strong>Key technologies:</strong> Python/Django, JavaScript, AJAX, Git, Linux.
+            <strong>Key technologies:</strong>
+            <div>
+              <KeyTechnology>Python/Django</KeyTechnology>
+              <KeyTechnology>JavaScript</KeyTechnology>
+              <KeyTechnology>AJAX</KeyTechnology>
+              <KeyTechnology>Git</KeyTechnology>
+              <KeyTechnology>Linux</KeyTechnology>
+            </div>
           </Text>
         </Job>
         
@@ -110,7 +138,13 @@ const Experience = () => {
             </ListItem>
           </List>
           <Text>
-            <strong>Key technologies:</strong> C#, ASP.net, MySQL, Git.
+            <strong>Key technologies:</strong>
+            <div>
+              <KeyTechnology>C#</KeyTechnology>
+              <KeyTechnology>ASP.net</KeyTechnology>
+              <KeyTechnology>MySQL</KeyTechnology>
+              <KeyTechnology>Git</KeyTechnology>
+            </div>
           </Text>
         </Job>
         
@@ -121,7 +155,12 @@ const Experience = () => {
             My role involved developing and maintaining iOS and Android apps for medical data collection, enhancing the efficiency and accuracy of healthcare data management.
           </Text>
           <Text>
-            <strong>Key technologies:</strong> JavaScript, Apache Cordova, Xamarin.
+            <strong>Key technologies:</strong>
+            <div>
+              <KeyTechnology>JavaScript</KeyTechnology>
+              <KeyTechnology>Apache Cordova</KeyTechnology>
+              <KeyTechnology>Xamarin</KeyTechnology>
+            </div>
           </Text>
         </Job>
       </motion.div>
